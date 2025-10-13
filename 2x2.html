@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2048 Galaxy</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="utf-8">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Welcome to <i>2048 Galaxy</i></h1>
+    <h2>This is version 0.030</h2>
+    <h3>Currently there is no UI. I'm sorry</h3>
+    <h3>Praise our lord and savior Gabriele Cirulli</h3>
+    <h4>
+        TS music fire:
+        <audio controls loop>
+            <source src="audio/Blossom Time.mp3" type="audio/mpeg">
+        </audio>
+    </h4>
+
+    <br>
+    <hr>
+    <br>
+
+    <h4>
+        <h4>
+            OK guys, so um 2048 = 2<sup>11</sup> and the max tile is 2<sup>17</sup>. That's very important, ok.
+        </h4>
+    </h4>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">2048 2x2</h1>
+            <div class="scores-container">
+                <div class="score-container">0</div>
+                <div class="best-container">0</div>
+            </div>
+        </div>
+
+        <div class="above-game">
+            <p class="game-intro">Join the numbers and get to the <strong>32 tile!</strong></p>
+            <a class="restart-button">New Game</a>
+        </div>
+
+        <div class="game-container">
+            <div class="game-message">
+                <p></p>
+                <div class="lower">
+                    <a class="keep-playing-button">Keep going</a>
+                    <a class="retry-button">Try again</a>
+                </div>
+            </div>
+
+                  <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+               
+               
+            </div>
+
+            <div class="tile-container"></div>
+        </div>
+
+        <p class="game-explanation">
+            <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+        </p>
+
+        <hr>
+
+        <p>
+            <strong class="important">Note:</strong> This site is NOT the official version of 2048. You can play the OFFICIAL on your phone via <a href="http://git.io/2048">http://git.io/2048</a>. Many other apps or sites are derivatives or fakes, and should be used with caution.
+        </p>
+
+        <hr>
+
+        <p>
+            Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>. Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer</a>.
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Main Game:</h2>
+    <a href="index.html" target="_blank" title="Goes to main page">Main Page here</a>
+    <br>
+    <a href="3x3.html" target="_blank" title="Goes to 3x3 game">3x3 game here</a>
+    <br>
+    <hr>
+    <br>
+    <a href="leaderboard.html" target="_blank" title="Goes to leaderboard">Leaderboard here</a>
+    <br>
+    <a href="changelog.html" target="_blank" title="Goes to changelog">Changelog here</a>
+    <br>
+    <a href="doggy.html" target="_blank" title="Goes to cute doggy">Cute doggy here</a>
+    <br>
+    <a href="ai_stats.html" target="_blank" title="Goes to AI stats">AI stats here</a>
+    <br>
+    <a href="button.html" target="_blank" title="Goes to button page">Click a button!</a>
+    <br>
+    <a href="account.html" target="_blank" title="Goes to account page">make account (currently doesnt save anywhere and<strong class="important"> will crash page</strong> after submit!)</a>
+    <br>    
+
+    <script src="js/bind_polyfill.js"></script>
+    <script src="js/classlist_polyfill.js"></script>
+    <script src="js/animframe_polyfill.js"></script>
+    <script src="js/keyboard_input_manager.js"></script>
+    <script src="js/html_actuator.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/2x2storagemanage.js"></script>
+    <script src="js/2x2gamemanage.js"></script>
+    <script src="js/2x2application.js"></script>
+</body>
+</html>

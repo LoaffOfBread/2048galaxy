@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button</title>
+        <link href="style/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <button onclick="doclick()" style="font-size:25px;">Click me</button>
+        <p id="button">You have not clicked the button</p>
+
+        <script>
+            function doclick(){
+                document.getElementById("button").innerHTML = "You clicked me!";
+            }
+        </script>
+    </body>
+</html>
